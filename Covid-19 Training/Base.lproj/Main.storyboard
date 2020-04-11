@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Covid_19_Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4af-fN-WRH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4C-Ce-jSL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="g4C-Ce-jSL" firstAttribute="top" secondItem="4af-fN-WRH" secondAttribute="top" id="0sJ-9w-uKU"/>
+                                    <constraint firstAttribute="bottom" secondItem="g4C-Ce-jSL" secondAttribute="bottom" constant="34" id="3zB-it-jnb"/>
+                                    <constraint firstItem="g4C-Ce-jSL" firstAttribute="leading" secondItem="4af-fN-WRH" secondAttribute="leading" id="Mj6-PB-aTj"/>
+                                    <constraint firstAttribute="trailing" secondItem="g4C-Ce-jSL" secondAttribute="trailing" id="kal-8Y-XW1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4af-fN-WRH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dzm-KW-3HY"/>
+                            <constraint firstItem="4af-fN-WRH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="h25-vl-BbS"/>
+                            <constraint firstItem="4af-fN-WRH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hyJ-sn-CiW"/>
+                            <constraint firstItem="4af-fN-WRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lb5-Cz-FqA"/>
+                            <constraint firstItem="4af-fN-WRH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m9L-yg-AqM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="4af-fN-WRH" id="8yq-qg-QDG"/>
+                        <outlet property="webView" destination="g4C-Ce-jSL" id="dqJ-e3-129"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
